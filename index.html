@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eshna's Personal Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Eshna Gupta</a>
+        <i id="menu-icon" class="bx bx-menu"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" >About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hi, It's</h3>
+        <h1>Eshna Gupta</h1>
+        <h3>I'm a <span class="multiple-text">student, coder, and writer</span></h3>
+       
+    </div>
+    <div class="home-image">
+        <image src="https://avatars.githubusercontent.com/u/44913766?v=4" alt="headshot">
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading" id="head-main">About <br></h1>
+    <h3 class="heading" id="sub-head"><span>A Look Into My Life</span></h3>
+    
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/vibes.jpeg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/ee109.jpeg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/sunset.jpeg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/latte.jpeg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+
+  </div>
+    </div>
+
+    <div class="about-content">
+        <h3>Student</h3>
+        <p>Undergraduate studying Computer Science at University of Southern California</p>
+        <h3>Coder</h3>
+        <p>4+ years of experience in programming languages: Java, C++, Python, HTML, JS</p>
+        <h3>Writer</h3>
+        <p>Experienced in creative storytelling, prose, and poetry. <br> See my poetry book <a target="_balnk" href="https://www.amazon.com/Moon-Also-Rises-Eshna-Gupta/dp/B08VFPNJ9N/ref=sr_1_1?dchild=1&keywords=the+moon+also+rises&qid=1625882985&sr=8-1">here</a></p>
+        <h3>Health Enthusiast</h3>
+        <p>Passionate about self-development, healthy living, and mindfulness.</p>
+    </div>  
+</section>
+
+
+<section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="projects-container">
+        <div class="projects-box">
+            <h3>Research</h3>
+            <br>
+            <p>Automated Facial Emotion and Expression Detection with Facial Palsy </p>
+            <h6>University of Southern California, SAIL Lab</h6>
+            <a target="_blank" href="https://github.com/eshnag/facialdetection">Read More</a>
+            <p>Water Consumption Detection in IoT Wireless Sensor Nodes </p>
+            <h6>Cal State Univ. Long Beach, CIST Lab</h6>
+            <a target="_blank" href="https://github.com/eshnag/GeneticAlgo/tree/main">Read More</a>
+            
+        </div>
+        <div class="projects-box">
+            <h3>Web Development and Programming</h3>
+            <p>BrainWorks<br></p>
+            <p id="small-descrip1">a personal project aimed to guide small-scale educators and organizations how to make digital services more impactful and user-friendly, through cognitive science research. </p>
+            <a target="_blank" href="https://eshnag.github.io/BrainWorks.github.io/index.html">Read More</a>
+            <p>Canadian Courage Project</p>
+            <p id="small-descrip2">Developed organization's initial website using JavaScript and HTML; incorporated cognitive psychology research to improve user experience for easier navigation.</p>
+
+        </div>
+        <div class="projects-box">
+            <h3>Writing</h3>
+            <p>The Moon Also Rises</p>
+            <p id="small-descrip3">Published poetry book on self-reflection, development, and women empowerment.</p>
+            <a target="_blank" href="https://www.amazon.com/Moon-Also-Rises-Eshna-Gupta/dp/B08VFPNJ9N/ref=sr_1_1?dchild=1&keywords=the+moon+also+rises&qid=1625882985&sr=8-1">Read More</a>
+            <p>The Model Minority Myth</p>
+            <p id="small-descrip3">Opinion editorial piece about how the model minority myth impacts the Black Lives Matter movement.</p>
+            <a target="_blank" href="https://medium.com/@eshnag04/how-the-model-minority-myth-affects-bias-towards-black-lives-dfa327c63356">Read More</a>
+
+        </div>
+        
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send" class="btn">
+    </form>
+
+</section>
+
+<!-- 
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Eshna</p>
+    </div>
+</footer> -->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
