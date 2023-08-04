@@ -1,0 +1,30 @@
+import {config} from "dotenv"
+config()
+import {Configuration, OpenAIApi} from "openai"
+import readline from "readline" //user interface, how u input info as message
+
+function createchat(){
+const openai = new OpenAIApi(new Configuration({
+    apiKey:process.env.API_KEY
+}))
+
+
+const userInterface = readline.createInterface({
+    input:process.stdin,
+    output:process.stdout
+})
+
+
+userInterface.prompt()
+userInterface.on("line", async input =>{ //async waits from promise to finish
+    const res = await openai.createChatCompletion({
+        model:"gpt-3.5-turbo",
+        messages: [{role: "user", content: input}],
+    })
+    console.log(res.data.choices[0].message.content) //gives actual response of chatgpt
+    userInterface.prompt()
+})
+
+
+}
+createchat()
