@@ -1,5 +1,4 @@
 
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -85,3 +84,21 @@ const typed = new Typed('.multiple-text', {
   loop:true
 });
 }
+
+
+const myquotes = ["The first step of behavior change is awareness- Atomic Habits" ,
+"Your habits create your mood, and your mood is a filter through which you experience your life.- 101 Essays That Will Change the Way You Think",
+"We teach people how to treat us.”– Phil McGraw",
+"Everyone has a chapter that they don't read out loud- Tori Desimone",
+"I will never have this version of me again- Rupi Kaur",
+"Once you eliminate self doubt you find freedom- Unsure",
+"Your priority is your decision maker- Roxie Nafousi",
+"The places you go are the people you surround yourself with- Unsure",]
+
+function generate(){
+  var rand = Math.floor(Math.random() * 8);
+  document.getElementById('quote-generated').innerText=( myquotes[rand]);
+
+}
+
+
