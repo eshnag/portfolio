@@ -77,7 +77,7 @@ navbar.classList.remove('active');
 window.onload = () =>{
 
 const typed = new Typed('.multiple-text', {
-  strings: ['Student', 'Coder', 'Writer', 'Dancer'],
+  strings: ['Creative Technologist', 'Poet', 'Dancer'],
   typeSpeed:80,
   backSpeed:80,
   backDelay:1000,
